@@ -116,7 +116,7 @@ const App: React.FC = () => {
         {!file ? (
           <div>
             <input
-              className="block text-sm text-slate-500 md:file:mr-4 w-52 md:w-auto file:py-2 md:file:px-4 file:rounded-md file:border-0 file:text-sm file:font-semibold file:bg-pink-50 file:text-pink-700 hover:file:bg-pink-100"
+              className="block text-sm text-slate-500 md:file:mr-4 w-52 md:w-auto file:py-2 md:file:px-4 file:rounded-md file:border-0 file:text-sm file:font-semibold file:bg-blue-100 file:text-blue-400 hover:file:bg-blue-200"
               type="file"
               accept="application/pdf"
               onChange={handleFileChange}
@@ -148,7 +148,7 @@ const App: React.FC = () => {
 
       <div
         className={classNames(
-          "flex justify-between md:mx-28 mx-5 my-10 border-slate-300 bg-zinc-50 border h-12 p-2 rounded items-center",
+          "flex justify-between md:mx-28 mx-5 my-10 border-slate-300 bg-zinc-50 border h-12 p-2 rounded-3xl items-center",
           { "opacity-50": loading }
         )}
       >
@@ -157,7 +157,7 @@ const App: React.FC = () => {
           value={text}
           onChange={handleTextChange}
           className="focus:outline-none w-full px-4 bg-transparent"
-          placeholder="Ask Question..."
+          placeholder="Ask me something!"
           disabled={loading}
           onKeyDown={handleKeyDown}
         />
